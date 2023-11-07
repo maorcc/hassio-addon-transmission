@@ -1,6 +1,7 @@
 name: "Transmission"
 description: "Transmission is a fast, easy, and free BitTorrent client."
-version: "0.1.18"
+url: "https://github.com/maorcc/hassio-addon-transmission/tree/main/transmission"
+version: "0.1.19"
 slug: "transmission"
 init: false
 arch:
@@ -20,25 +21,8 @@ ports:
   51413/udp: 51413
 options:
   config_dir: /share/Transmission
-#   download_dir: null
-#   rpc_whitelist_enabled: false
 schema:
   config_dir: str
-#   download_dir: str
-#   rpc_whitelist_enabled: bool?
-#   rpc_whitelist: 
-#     - str?
-#   rpc_host_whitelist: 
-#     - str?
-#   watch_dir_enabled: bool?
-#   watch_dir: str?
-#   watch_dir_force_generic: bool?
-#   incomplete_dir_enabled: bool?
-#   incomplete_dir?: str?
-#   rename_partial_files: bool?
-#   start_added_torrents: bool?
-#   trash_original_torrent_files: bool?
-#   cache_size_mb: int?
-#   encryption: int?
-#   message_level: int?
+# image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
+
   
