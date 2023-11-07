@@ -1,0 +1,9 @@
+---
+configuration:
+  config_dir:
+    name: Transmission Configuration Directory
+    description: "Where transmission puts its settings.json and other configuration files.  When changed, you may need to manually copy any configuration you already have from a previous configuration directory. Default: /share/Transmission"
+network:
+  9091/tcp: Transmission WebUI and RPC port
+  51413/tcp: Peer Port TCP
+  51413/udp: Peer Port UDP.  Must be identical to the "Peer Port TCP" above.

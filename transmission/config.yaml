@@ -1,0 +1,44 @@
+name: "Transmission"
+description: "Transmission is a fast, easy, and free BitTorrent client."
+version: "0.1.18"
+slug: "transmission"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: application
+webui: http://[HOST]:[PORT:9091]/transmission/web
+map:
+  - media:rw
+  - share:rw
+ports:
+  9091/tcp: 9091
+  51413/tcp: 51413
+  51413/udp: 51413
+options:
+  config_dir: /share/Transmission
+#   download_dir: null
+#   rpc_whitelist_enabled: false
+schema:
+  config_dir: str
+#   download_dir: str
+#   rpc_whitelist_enabled: bool?
+#   rpc_whitelist: 
+#     - str?
+#   rpc_host_whitelist: 
+#     - str?
+#   watch_dir_enabled: bool?
+#   watch_dir: str?
+#   watch_dir_force_generic: bool?
+#   incomplete_dir_enabled: bool?
+#   incomplete_dir?: str?
+#   rename_partial_files: bool?
+#   start_added_torrents: bool?
+#   trash_original_torrent_files: bool?
+#   cache_size_mb: int?
+#   encryption: int?
+#   message_level: int?
+  
