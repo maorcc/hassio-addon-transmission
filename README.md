@@ -8,7 +8,7 @@ This repository provides a Transmission add-on for Home Assistant.
 
 This repository contains the following add-ons
 
-### [Example add-on](./example)
+### [Transmission add-on](./transmission)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -30,9 +30,6 @@ Notes to developers after forking or using the github template feature:
   - You may also need to adjust the github Actions configuration (Settings > Actions > General > Workflow > Read & Write)
 - Adjust the 'image' key in 'example/config.yaml' so it points to your username instead of 'home-assistant'.
   - This is where the build images will be published to.
-- Rename the example directory.
-  - The 'slug' key in 'example/config.yaml' should match the directory name.
-- Adjust all keys/url's that points to 'home-assistant' to now point to your user/fork.
 - Share your repository on the forums https://community.home-assistant.io/c/projects/9
 - Do awesome stuff!
  -->

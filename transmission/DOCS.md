@@ -20,16 +20,19 @@ Follow these steps to get the add-on installed on your system:
 ## Configuration
 All Transmission settings are stored in the `settings.json` file that is found in the config directory.
 
-Most Transmission settings can be changed via its web UI.  On Transmission shutdown all the settings are saved to the settings.json file.
-So remember to stop the add-on before making any manual changes to the settings.json file, or your manual changes may be lost.
+Two ways to change Transmission settings:
+1. Most Transmission settings can be changed via its web UI.
+2. Edit the settings.json file manually. Note: On Transmission shutdown all the settings are automatically saved to the `settings.json` file.
+So remember to stop the add-on before making any manual changes to the settings.json file, or your manual changes may be lost next time Transmission stops.
+
+For full documentation on Transmission options see the [Transmission Docs].
 
 You can change the location of the configuration directory in the add-on configuration page.  If you change the configuration directory after running the add-on, your old settings will not automatically move from the old to the new directory.  You may need to copy any configuration manually.
 
-### Default Settings
-This add-on uses transmission default settings except for the followings
-
-1. `rpc-whitelist` and `rpc-host-whitelist` also includes local network values, so that the UI would be accessible by default from the local network.
-2. `download-dir` is set by default to "/share/download"
+### Modified Default Settings
+This add-on uses transmission default settings as described in the [Transmission Docs], except for the followings:
+1. `rpc-whitelist` and `rpc-host-whitelist` also includes local network values, so that the UI would be accessible by default from the local network. You can change these settings only by manually editing the settings.json file.
+2. `download-dir` is set by default to "/share/download".  This can be changed using the web UI.
 
 ## Support
 
@@ -48,3 +51,4 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 [issue]: https://github.com/home-assistant/addons/issues
 [reddit]: https://reddit.com/r/homeassistant
 [repository]: https://github.com/hassio-addons/repository
+[Transmission Docs]: https://github.com/transmission/transmission/blob/main/docs/Editing-Configuration-Files.md#options

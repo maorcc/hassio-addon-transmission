@@ -1,13 +1,13 @@
 # Home Assistant Add-on: Transmission
 
-A fast, easy, and free BitTorrent client..
+A fast, easy, clean and free BitTorrent client.
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
-This add-on provides a light BitTorrent client that runs in your Home Assistant server.
+Transmission is a popular BitTorrent client that runs as a docker in your Home Assistant server.  Managed using a friendly web UI.
 It provides all the standard BitTorrent client functionality and more.
 
-See https://transmissionbt.com/ for more details.
+For more details on Transmission see: https://transmissionbt.com/
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
