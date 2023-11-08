@@ -5,7 +5,9 @@
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on store**.
-2. Add this github repository to your list of add-ons repositories
+2. Click the three dots on the top right corner and select **Repositories**.
+2. Add the repository `https://github.com/maorcc/hassio-addon-transmission` to your list of add-ons repositories.
+3. Exit back to the **Add-on store**.
 3. Find the "Transmission" add-on and click it.
 4. Click on the "INSTALL" button.
 
