@@ -1,14 +1,4 @@
-# Transmission Home Assistant add-on repository
-
-This repository provides a Transmission add-on for Home Assistant.
-
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
-
-## Add-ons
-
-This repository contains the following add-ons
-
-### [Transmission add-on](./transmission)
+# Transmission - Home Assistant add-on
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -16,7 +6,24 @@ This repository contains the following add-ons
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-_Example add-on to use as a blueprint for new add-ons._
+This repository provides a [Transmission](https://transmissionbt.com/) add-on for [Home Assistant](https://www.home-assistant.io/).
+
+<img src="https://transmissionbt.com/assets/images/Transmission_icon.png" width="120" height="120">
+
+
+Learn more about the Transmission BitTorrent client from the website: https://transmissionbt.com/
+
+Read more about this [Transmission add-on](./transmission).
+
+To install, please add this repository to your Home Assistant add-ons Store by clicking here:
+
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
+
+More details on installing and configuring this add-on can be found [here](./transmission/).
+
+If you like it, please ⭐ this github repository.
+
+<img src="https://www.home-assistant.io/images/home-assistant-logo-vertical.svg" width="200" height="200">
 
 <!--
 
