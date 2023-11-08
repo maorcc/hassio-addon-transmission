@@ -53,7 +53,7 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 
 [discord]: https://discord.gg/c5DvZ4e
 [forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
+[issue]: https://github.com/maorcc/hassio-addon-transmission/issues
 [reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[repository]: https://github.com/maorcc/hassio-addon-transmission
 [Transmission Docs]: https://github.com/transmission/transmission/blob/main/docs/Editing-Configuration-Files.md#options
