@@ -13,6 +13,7 @@ arch:
 startup: application
 webui: http://[HOST]:[PORT:9091]/transmission/web
 map:
+  - config:rw
   - media:rw
   - share:rw
 ports:
@@ -20,9 +21,7 @@ ports:
   51413/tcp: 51413
   51413/udp: 51413
 options:
-  config_dir: /share/Transmission
+  config_dir: /config/transmission
 schema:
   config_dir: str
 # image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
-
-  
