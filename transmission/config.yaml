@@ -11,7 +11,7 @@ arch:
   - armv7
   - i386
 startup: application
-# webui: http://[HOST]:[PORT:8099]/transmission/web
+# webui: http://[HOST]:[PORT:9091]/transmission/web
 map:
   - config:rw
   - media:rw
