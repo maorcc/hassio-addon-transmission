@@ -12,6 +12,9 @@ arch:
   - i386
 startup: application
 # webui: http://[HOST]:[PORT:9091]/transmission/web
+ingress: true
+ingress_entry: /transmission/web
+ingress_port: 9091
 map:
   - config:rw
   - media:rw
@@ -24,7 +27,4 @@ options:
   config_dir: /config/transmission
 schema:
   config_dir: str
-
-ingress: true
-ingress_entry: transmission/web
-ingress_port: 9091
+# image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
