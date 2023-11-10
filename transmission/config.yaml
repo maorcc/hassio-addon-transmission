@@ -1,7 +1,7 @@
 name: "Transmission"
 description: "Transmission is a fast, easy, and free BitTorrent client."
 url: "https://github.com/maorcc/hassio-addon-transmission/tree/main/transmission"
-version: "0.1.20"
+version: "0.1.21"
 slug: "transmission"
 init: false
 arch:
@@ -11,17 +11,20 @@ arch:
   - armv7
   - i386
 startup: application
-webui: http://[HOST]:[PORT:9091]/transmission/web
+# webui: http://[HOST]:[PORT:8099]/transmission/web
 map:
   - config:rw
   - media:rw
   - share:rw
 ports:
-  9091/tcp: 9091
+  # 9091/tcp: 9091
   51413/tcp: 51413
   51413/udp: 51413
 options:
   config_dir: /config/transmission
 schema:
   config_dir: str
-# image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
+
+ingress: true
+ingress_entry: transmission/web
+ingress_port: 9091
