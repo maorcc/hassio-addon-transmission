@@ -11,7 +11,6 @@ if ! bashio::fs.file_exists "$settings_file"; then
     cat > "$settings_file" <<'EOF'
 {
     "rpc-whitelist": "172.30.32.2",
-    "rpc-url": "/transmission/",
     "download-dir": "/share/download"
 }
 EOF
@@ -19,8 +18,6 @@ EOF
 fi
 
 bashio::log.info "bashio::addon.ingress_entry = $(bashio::addon.ingress_entry)"
-
-sed -i "/rpc-url/c\    \"rpc-url\": \"$(bashio::addon.ingress_entry)/transmission/\"," $config_dir/settings.json
 
 bashio::log.info 'Starting Transmission Daemon'
 /usr/bin/transmission-daemon -g "$config_dir" -f
