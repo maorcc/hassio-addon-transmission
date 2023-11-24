@@ -10,14 +10,12 @@ if ! bashio::fs.file_exists "$settings_file"; then
     mkdir -p "$config_dir"
     cat > "$settings_file" <<'EOF'
 {
-    "rpc-whitelist": "127.0.0.1,::1,192.168.*.*, 10.*.*.*,172.*.*.*,192.168.*.*",
-    "rpc-host-whitelist": "*.local",
+    "rpc-whitelist": "172.30.32.2",
     "download-dir": "/share/download"
 }
 EOF
     bashio::log.info 'Setting initial whitelist to allow access to web UI from local network.'
 fi
-
 
 bashio::log.info 'Starting Transmission Daemon'
 /usr/bin/transmission-daemon -g "$config_dir" -f
