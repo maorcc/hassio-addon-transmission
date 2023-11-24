@@ -13,7 +13,7 @@ arch:
 startup: application
 # webui: http://[HOST]:[PORT:9091]/transmission/web
 ingress: true
-ingress_entry: transmission/web
+ingress_entry: transmission/web/
 ingress_port: 9091
 map:
   - config:rw
