@@ -27,7 +27,9 @@ You can change the config-dir folder location in the add-on configuration page. 
 The Transmission settings are stored in the `settings.json` file that is located in the config-dir.
 
 Two ways to change Transmission settings:
+
 1. Most Transmission settings can be changed via the Transmission web UI. (Recommended)
+
 2. Edit the settings.json file manually but only while the add-on is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed in the web UI.) 
 
 For full documentation on Transmission settings see the [Transmission Docs].
@@ -39,8 +41,10 @@ For full documentation on Transmission settings see the [Transmission Docs].
 ### Modified Default Settings
 
 This add-on uses transmission default settings as described in the [Transmission Docs], except for the followings:
-1. `rpc-whitelist`="172.30.32.2".  Do not chnage this value.
+1. `rpc-whitelist`="172.30.32.2".  Do not change this value.
+
 2. "rpc-host-whitelist-enabled"= false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
+
 3. `download-dir` is where Transmission will put the files it downloadeds.  The default is set to "/share/download".   You can set it to any location either under `/media` or `/share`. This can also be changed using the web UI.
 
 ## How to use
