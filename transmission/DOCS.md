@@ -16,7 +16,7 @@ Like other addons:
 
 ### Configuration directory (aka `config-dir``)
 
-In the add-on **Configuration** tab you can specify the *config-dir*. Default=**/config/transmission**
+In the add-on **Configuration** tab you can specify the *config-dir*. Default=**/addon_config/transmission**
 
 The config-dir contains files and subdirectories that are used as the "database" of Transmission.  Transmission reads this folder content on startup and saves it on shutdown.
 
