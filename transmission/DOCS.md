@@ -2,28 +2,25 @@
 
 ## Installation
 
-Regular steps for installing an add-on:
+Like other addons:
 
-1. Add this repository to your Add-on Store.  The easy way is to click this **[ link ](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)** that will open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled. Alternatively you can manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list.
+1. Add this repository to your Add-on Store using the link below. (Or manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list.)
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
-2. Go to the Home Asistant **Add-on store**.
+2. Find the "Transmission" add-on in the Home Assistant Add-on Store. Click on it, and click on the "INSTALL" button.
 
-3. Find the "Transmission" add-on and click on it.
-
-4. Click on the "INSTALL" button.
-
-5. Turn on the **Show in sidebar** and **Start on boot** options.
+3. Turn on the **Show in sidebar** and **Start on boot** options.
 
 
 ## Configuration
 
-### Confguration directory (aka `config-dir``)
+### Configuration directory (aka `config-dir``)
 
-In the add-on **Configuration** page you can specify the *config-dir*. Default=**/config/transmission**
+In the add-on **Configuration** tab you can specify the *config-dir*. Default=**/config/transmission**
 
 The config-dir contains files and subdirectories that are used as the "database" of Transmission.  Transmission reads this folder content on startup and saves it on shutdown.
 
-If the config-dir empty or does not exist, the add-on will create it and fill it with its default settings.
+If the config-dir is empty or does not exist, the add-on will create it and fill it with its default settings.
 
 You can change the config-dir folder location in the add-on configuration page.  But if you change it after running the add-on, your settings will not automatically move from the old to the new location.  If you want your old configuration then you need to copy the relevant files manually.
 
@@ -47,20 +44,20 @@ For full documentation on Transmission settings see the [Transmission Docs].
 
 Transmission would work fine with the default settings. But you can change the settings to your needs.
 
-The default values in settings.json are similar to the default values that are described in the official [Transmission Docs], except for the followings defaults:
+The default values in settings.json are similar to the default values that are described in the official [Transmission Docs], except for the following defaults:
 
 1. `rpc-whitelist`="172.30.32.2". Do not change this value as this is the internal home assistant docker IP address.
 
 2. `rpc-host-whitelist-enabled`=false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
 
-3. `download-dir`="/share/download". This is where Transmission will put the files it downloadeds.  You can set it to any directory either under "/media" or under "/share".
+3. `download-dir`="/share/download". This is where Transmission will put the files it downloads.  You can set it to any directory either under "/media" or under "/share".
 
 
 ## How to Use
 
-The "Transmission" easy to use web UI is available on the Home Assistant sidebar.
+The "Transmission" easy-to-use web UI is available on the Home Assistant sidebar.
 
-If you do not see it on the sidebar, make sure the addon is running and that you turned on the "Show in sidebar" option in the Add-on page.
+If you do not see it on the sidebar, make sure the addon is running and that you have turned on the "Show in sidebar" option on the Add-on page.
 
 You will find the files you downloaded with Transmission in "/share/download" (That is unless you have changed the `download-dir` settings) 
 
