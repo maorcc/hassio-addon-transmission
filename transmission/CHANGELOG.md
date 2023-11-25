@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 Initial release
 
 ### Added
-Fully functional Transmission daemon, including UI on Home Assistant sidebar (aka Add-on ingress)
+Fully functional Transmission daemon add-on, including its easy to use web UI inside the Home Assistant.
 
 ### Changed
   

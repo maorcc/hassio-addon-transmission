@@ -4,11 +4,16 @@
 
 Regular steps for installing an add-on:
 
-1. Add this repository to your Add-on Store.  The easy way to do it is to click on [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission) that will open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled. Alternatively you can manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list. 
+1. Add this repository to your Add-on Store.  The easy way is to click this **[ link ](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)** that will open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled. Alternatively you can manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list.
+
 2. Go to the Home Asistant **Add-on store**.
+
 3. Find the "Transmission" add-on and click on it.
+
 4. Click on the "INSTALL" button.
+
 5. Turn on the **Show in sidebar** and **Start on boot** options.
+
 
 ## Configuration
 
@@ -38,18 +43,25 @@ For full documentation on Transmission settings see the [Transmission Docs].
 >
 > Changes to the `settings.json` file should only be done when the add-on is stopped.  Otherwise your changes will be discarded.
 
-### Modified Default Settings
+### The default settings
 
-This add-on uses transmission default settings as described in the [Transmission Docs], except for the followings:
-1. `rpc-whitelist`="172.30.32.2".  Do not change this value.
+This add-on sets transmission default settings in settings.json as described in the official [Transmission Docs], except for the followings:
 
-2. "rpc-host-whitelist-enabled"= false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
+1. `rpc-whitelist`="172.30.32.2".  This is an internal docker IP address. Do not change this value.
+
+2. `rpc-host-whitelist-enabled`=false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
 
 3. `download-dir` is where Transmission will put the files it downloadeds.  The default is set to "/share/download".   You can set it to any location either under `/media` or `/share`. This can also be changed using the web UI.
 
-## How to use
 
-The "Transmission" web UI is available on the Home Assistant sidebar.
+## How to Use
+
+The "Transmission" easy to use web UI is available on the Home Assistant sidebar.
+
+If you do not see it on the sidebar, make sure the addon is running and that you turned on the "Show in sidebar" option in the Add-on page.
+
+If you like this add-on, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
+
 
 ## Support
 
