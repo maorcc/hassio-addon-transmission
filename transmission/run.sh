@@ -11,6 +11,7 @@ if ! bashio::fs.file_exists "$settings_file"; then
     cat > "$settings_file" <<'EOF'
 {
     "rpc-whitelist": "172.30.32.2",
+    "rpc-host-whitelist-enabled": false,
     "download-dir": "/share/download"
 }
 EOF
@@ -19,4 +20,4 @@ fi
 
 bashio::log.info 'Starting Transmission Daemon'
 /usr/bin/transmission-daemon -g "$config_dir" -f
-bashio::log.info 'Transmission Daemon stopped running.'
+bashio::log.info 'Transmission Daemon stopped.'

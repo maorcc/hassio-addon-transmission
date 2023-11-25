@@ -8,20 +8,20 @@
 
 This repository provides a [Transmission](https://transmissionbt.com/) add-on for [Home Assistant](https://www.home-assistant.io/).
 
-<img src="https://transmissionbt.com/assets/images/Transmission_icon.png" width="120" height="120">
+<img src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
 
 
-Learn more about the Transmission BitTorrent client from the website: https://transmissionbt.com/
+Learn more about the Transmission BitTorrent client from the official Transmission website: https://transmissionbt.com/
 
-Read more about this [Transmission add-on](./transmission).
+Read the [detailed documentation](./transmission) of this Home Assitant Transmission add-on.
 
-To install, please add this repository to your Home Assistant add-ons Store by clicking here:
+To install, add this repository to your Home Assistant add-ons Store by clicking here:
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
-More details on installing and configuring this add-on can be found [here](./transmission/).
+More details on installing and configuring this add-on can be found in the add-on docs, [here](./transmission/).
 
-If you like it, please ⭐ this github repository.
+If you like it, please ⭐ this github repository. Thank you! <big>🙏</big>
 
 <img src="https://www.home-assistant.io/images/home-assistant-logo-vertical.svg" width="200" height="200">
 

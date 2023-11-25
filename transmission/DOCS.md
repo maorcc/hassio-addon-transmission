@@ -2,42 +2,50 @@
 
 ## Installation
 
-Follow these steps to get the add-on installed on your system:
+Regular steps for installing an add-on:
 
-1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on store**.
-2. Click the three dots on the top right corner and select **Repositories**.
-2. Add the repository `https://github.com/maorcc/hassio-addon-transmission` to your list of add-ons repositories.
-3. Exit back to the **Add-on store**.
-3. Find the "Transmission" add-on and click it.
+1. Add this repository to your Add-on Store.  The easy way to do it is to click on [this link](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission) that will open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled. Alternatively you can manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list. 
+2. Go to the Home Asistant **Add-on store**.
+3. Find the "Transmission" add-on and click on it.
 4. Click on the "INSTALL" button.
+5. Turn on the **Show in sidebar** and **Start on boot** options.
 
 ## Configuration
-### Confguration directory
-In the add-on **Configuration** page you can specify the location of the Transmission Configuration directory.
-That configuration directory contains files and subdirectories that are used as the "database" of Transmission.  Transmission reads this folder on startup and saves it on shutdown.  You can change the settings using the Transmission web UI or by editing the files while the Transmission add-on is stopped.
 
-As said, you can change the location of the configuration directory in the add-on configuration page.  But if you change the configuration directory after running the add-on, your old settings will not automatically move from the old to the new configuration directory.  If you want your old configuration then you need to copy the relevant files manually.
+### Confguration directory (aka `config-dir``)
 
+In the add-on **Configuration** page you can specify the *config-dir*. Default=**/config/transmission**
+
+The config-dir contains files and subdirectories that are used as the "database" of Transmission.  Transmission reads this folder content on startup and saves it on shutdown.
+
+If the config-dir empty or does not exist, the add-on will create it and fill it with its default settings.
+
+You can change the config-dir folder location in the add-on configuration page.  But if you change it after running the add-on, your settings will not automatically move from the old to the new location.  If you want your old configuration then you need to copy the relevant files manually.
 
 ### The Settings.json file
-Most Transmission settings are stored in the `settings.json` file that is found in the configuration directory.
+
+The Transmission settings are stored in the `settings.json` file that is located in the config-dir.
 
 Two ways to change Transmission settings:
-1. Most Transmission settings can be changed via its web UI. (Recommended)
-2. Edit the settings.json file manually but only while the add-on is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed using the web UI.) 
+1. Most Transmission settings can be changed via the Transmission web UI. (Recommended)
+2. Edit the settings.json file manually but only while the add-on is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed in the web UI.) 
 
-For full documentation on Transmission options see the [Transmission Docs].
+For full documentation on Transmission settings see the [Transmission Docs].
+
+> <big>⚠️ IMPORTANT</big>
+>
+> Changes to the `settings.json` file should only be done when the add-on is stopped.  Otherwise your changes will be discarded.
 
 ### Modified Default Settings
+
 This add-on uses transmission default settings as described in the [Transmission Docs], except for the followings:
-1. `rpc-whitelist` and `rpc-host-whitelist` also includes local network values, so that the UI would be accessible by default from the local network. You can change these settings only by manually editing the settings.json file.
-2. `download-dir` is set by default to "/share/download".  This can be changed using the web UI.
+1. `rpc-whitelist`="172.30.32.2".  Do not chnage this value.
+2. "rpc-host-whitelist-enabled"= false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
+3. `download-dir` is where Transmission will put the files it downloadeds.  The default is set to "/share/download".   You can set it to any location either under `/media` or `/share`. This can also be changed using the web UI.
 
 ## How to use
 
-1. Start the add-on.
-2. On first run, the add-on will create a Transmission Config Directory and fill it up with the default settings.
-3. Access the Transmission Web UI clicking the "OPEN WEB UI" button on the add-on page.
+The "Transmission" web UI is available on the Home Assistant sidebar.
 
 ## Support
 
