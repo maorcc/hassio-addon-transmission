@@ -10,7 +10,6 @@ arch:
   - armhf
   - armv7
   - i386
-startup: application
 ingress: true
 ingress_entry: transmission/web/
 ingress_port: 9091
