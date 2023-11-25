@@ -51,7 +51,7 @@ This add-on sets transmission default settings in settings.json as described in 
 
 2. `rpc-host-whitelist-enabled`=false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
 
-3. `download-dir` is where Transmission will put the files it downloadeds.  The default is set to "/share/download".   You can set it to any location either under `/media` or `/share`. This can also be changed using the web UI.
+3. `download-dir`="/share/download". This is where Transmission will put the files it downloadeds.  You can set it to any directory name either under "/media" or under "/share".
 
 
 ## How to Use
