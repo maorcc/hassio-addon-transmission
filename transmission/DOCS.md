@@ -45,13 +45,15 @@ For full documentation on Transmission settings see the [Transmission Docs].
 
 ### The default settings
 
-This add-on sets transmission default settings in settings.json as described in the official [Transmission Docs], except for the followings:
+Transmission would work fine with the default settings. But you can change the settings to your needs.
 
-1. `rpc-whitelist`="172.30.32.2".  This is an internal docker IP address. Do not change this value.
+The default values in settings.json are similar to the default values that are described in the official [Transmission Docs], except for the followings defaults:
+
+1. `rpc-whitelist`="172.30.32.2". Do not change this value as this is the internal home assistant docker IP address.
 
 2. `rpc-host-whitelist-enabled`=false. You can enable this if you also set the "rpc-host-whitelist" option to your Home Assistant host name.
 
-3. `download-dir`="/share/download". This is where Transmission will put the files it downloadeds.  You can set it to any directory name either under "/media" or under "/share".
+3. `download-dir`="/share/download". This is where Transmission will put the files it downloadeds.  You can set it to any directory either under "/media" or under "/share".
 
 
 ## How to Use
@@ -59,6 +61,8 @@ This add-on sets transmission default settings in settings.json as described in 
 The "Transmission" easy to use web UI is available on the Home Assistant sidebar.
 
 If you do not see it on the sidebar, make sure the addon is running and that you turned on the "Show in sidebar" option in the Add-on page.
+
+You will find the files you downloaded with Transmission in "/share/download" (That is unless you have changed the `download-dir` settings) 
 
 If you like this add-on, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
 
