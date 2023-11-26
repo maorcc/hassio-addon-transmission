@@ -23,4 +23,4 @@ ports:
   51413/tcp: 51413
   51413/udp: 51413
 
-# image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
+image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"
