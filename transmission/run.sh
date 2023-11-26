@@ -1,13 +1,11 @@
 #!/usr/bin/with-contenv bashio
 
-readonly config_dir="$(bashio::config 'config_dir')"
+readonly config_dir="/config"
 readonly settings_file="$config_dir/settings.json"
 
-bashio::log.info "Transmission configuration direcotry: $config_dir"
 if ! bashio::fs.file_exists "$settings_file"; then
-    bashio::log.info 'First run! Initializing configuration.'
+    bashio::log.info 'First run! Initializing Transmission settings.json in the addon_configs folder.'
 
-    mkdir -p "$config_dir"
     cat > "$settings_file" <<'EOF'
 {
     "rpc-whitelist": "172.30.32.2",

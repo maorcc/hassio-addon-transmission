@@ -22,8 +22,5 @@ ports:
   9091/tcp: null
   51413/tcp: 51413
   51413/udp: 51413
-options:
-  config_dir: /addon_config/transmission
-schema:
-  config_dir: str
+
 # image: "ghcr.io/maorcc/{arch}-hassio-addon-transmission"

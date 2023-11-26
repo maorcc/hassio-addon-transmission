@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
+ 
+## [1.2.0] - 2023-11-26
+  
+Removed the option to configure the Transmission config-dir. This parameter is now hard coded to be the new
+`addon_config` folder. 
+
+### Breaking Changes
+If you upgrade from a previous version, you may need to copy your old configuration from its previous location.  
+By default the location was at `/config/transmission`
+
+### changes
+There is no option to change the config-dir anymore.
+
+
 ## [1.1.0] - 2023-11-26
   
 Use "/addon_config" instead of "/config" as the default location of Transmission's config-dir.
