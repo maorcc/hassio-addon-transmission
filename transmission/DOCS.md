@@ -5,6 +5,7 @@
 Like other addons:
 
 1. Add this repository to your Add-on Store using the link below. (Or manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list.)
+
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
 2. Find the "Transmission" add-on in the Home Assistant Add-on Store. Click on it, and click on the "INSTALL" button.
@@ -14,19 +15,9 @@ Like other addons:
 
 ## Configuration
 
-### Configuration directory (aka `config-dir``)
-
-In the add-on **Configuration** tab you can specify the *config-dir*. Default=**/addon_config/transmission**
-
-The config-dir contains files and subdirectories that are used as the "database" of Transmission.  Transmission reads this folder content on startup and saves it on shutdown.
-
-If the config-dir is empty or does not exist, the add-on will create it and fill it with its default settings.
-
-You can change the config-dir folder location in the add-on configuration page.  But if you change it after running the add-on, your settings will not automatically move from the old to the new location.  If you want your old configuration then you need to copy the relevant files manually.
-
 ### The Settings.json file
 
-The Transmission settings are stored in the `settings.json` file that is located in the config-dir.
+The Transmission settings are stored in the `settings.json` file that is located in the addon_config directory.
 
 Two ways to change Transmission settings:
 
