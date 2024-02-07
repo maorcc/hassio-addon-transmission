@@ -5,9 +5,6 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
-## [1.2.4] - 2024-02-08
-  
-Upgrade Transmission from v4.0.4 to v4.0.5.
 
 ## [1.2.3] - 2023-11-27
   
