@@ -21,7 +21,7 @@ The Transmission settings are stored in the `settings.json` file that is located
 
 Two ways to change Transmission settings:
 
-1. Most Transmission settings can be changed via the Transmission web UI. (Recommended)
+1. Most Transmission settings can be modified via the Transmission web UI. (Recommended)
 
 2. Edit the settings.json file manually but only while the add-on is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed in the web UI.) 
 
