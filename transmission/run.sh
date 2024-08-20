@@ -16,6 +16,7 @@ EOF
     bashio::log.info 'Setting initial whitelist to allow access to web UI from local network.'
 fi
 
+
 bashio::log.info 'Starting Transmission Daemon'
 /usr/bin/transmission-daemon -g "$config_dir" -f
 bashio::log.info 'Transmission Daemon stopped.'
