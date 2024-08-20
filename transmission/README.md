@@ -8,7 +8,7 @@
 <img src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
 
 
-Transmission provides all the standard BitTorrent client functionality and more.
+Transmission v5.0.5 provides all the standard BitTorrent client functionality and more.
 
 For more details on Transmission see: https://transmissionbt.com/
 
