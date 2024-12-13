@@ -67,6 +67,8 @@ You have several options to get them answered:
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
+To check what is the latest version of Transmission that can be supported by this addon, check what is the latest [Alpine version that is supported by Home Assistant Docker-Base](https://github.com/home-assistant/docker-base/pkgs/container/aarch64-base#base-images), then check in [alpinelinux.org](https://pkgs.alpinelinux.org/packages?name=transmission&branch=edge&repo=&arch=x86_64&origin=&flagged=&maintainer=) what version of Transmission is supported by that Alpine.
+
 [discord]: https://discord.gg/9H9uwXXEhJ
 [forum]: https://community.home-assistant.io
 [issue]: https://github.com/maorcc/hassio-addon-transmission/issues
