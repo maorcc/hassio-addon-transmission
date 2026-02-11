@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
+## [1.2.9] - 2026-02-11
+
+Bump Alpine base from 3.21 to 3.23 and Transmission from 4.0.6-r0 to 4.0.6-r4.
+
 ## [1.2.8] - 2024-12-14
   
 Upgrade Transmission from v4.0.5 to v4.0.6.
