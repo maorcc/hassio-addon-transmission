@@ -21,40 +21,30 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix.outputs.matrix }}
-      version: ${{ steps.normalize.outputs.version }}
-      image_name: ${{ steps.normalize.outputs.image_name }}
-      registry_prefix: ${{ steps.normalize.outputs.registry_prefix }}
+      version: ${{ steps.info.outputs.version }}
+      image_name: ${{ steps.info.outputs.image_name }}
+      registry_prefix: ${{ steps.info.outputs.registry_prefix }}
       architectures: ${{ steps.info.outputs.architectures }}
     steps:
       - name: Check out the repository
         uses: actions/checkout@v7.0.0
 
-      - name: Get add-on info
+      - name: Read add-on info from config.yaml
         id: info
-        uses: home-assistant/actions/helpers/info@master
-        with:
-          path: "./transmission"
-
-      - name: Normalize add-on info
-        id: normalize
-        env:
-          IMAGE: ${{ steps.info.outputs.image }}
-          VERSION: ${{ steps.info.outputs.version }}
         run: |
-          # The info helper emits values as JSON (quoted); decode them.
-          image=$(jq -r . <<< "$IMAGE")
-          version=$(jq -r . <<< "$VERSION")
+          image=$(yq '.image' transmission/config.yaml)
           echo "image_name=${image##*/}" >> "$GITHUB_OUTPUT"
           echo "registry_prefix=${image%/*}" >> "$GITHUB_OUTPUT"
-          echo "version=${version}" >> "$GITHUB_OUTPUT"
+          echo "version=$(yq '.version' transmission/config.yaml)" >> "$GITHUB_OUTPUT"
+          echo "architectures=$(yq -o=json -I=0 '.arch' transmission/config.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Prepare build matrix
         id: matrix
         uses: home-assistant/builder/actions/prepare-multi-arch-matrix@2026.06.0
         with:
           architectures: ${{ steps.info.outputs.architectures }}
-          image-name: ${{ steps.normalize.outputs.image_name }}
-          registry-prefix: ${{ steps.normalize.outputs.registry_prefix }}
+          image-name: ${{ steps.info.outputs.image_name }}
+          registry-prefix: ${{ steps.info.outputs.registry_prefix }}
 
   build:
     name: Build ${{ matrix.arch }} image
