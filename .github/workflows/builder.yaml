@@ -21,12 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix.outputs.matrix }}
-      version: ${{ steps.info.outputs.version }}
+      version: ${{ steps.normalize.outputs.version }}
       image_name: ${{ steps.normalize.outputs.image_name }}
       registry_prefix: ${{ steps.normalize.outputs.registry_prefix }}
-      name: ${{ steps.info.outputs.name }}
-      description: ${{ steps.info.outputs.description }}
-      url: ${{ steps.info.outputs.url }}
       architectures: ${{ steps.info.outputs.architectures }}
     steps:
       - name: Check out the repository
@@ -38,13 +35,18 @@ jobs:
         with:
           path: "./transmission"
 
-      - name: Normalize image name
+      - name: Normalize add-on info
         id: normalize
         env:
           IMAGE: ${{ steps.info.outputs.image }}
+          VERSION: ${{ steps.info.outputs.version }}
         run: |
-          echo "image_name=${IMAGE##*/}" >> "$GITHUB_OUTPUT"
-          echo "registry_prefix=${IMAGE%/*}" >> "$GITHUB_OUTPUT"
+          # The info helper emits values as JSON (quoted); decode them.
+          image=$(jq -r . <<< "$IMAGE")
+          version=$(jq -r . <<< "$VERSION")
+          echo "image_name=${image##*/}" >> "$GITHUB_OUTPUT"
+          echo "registry_prefix=${image%/*}" >> "$GITHUB_OUTPUT"
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - name: Prepare build matrix
         id: matrix
@@ -80,10 +82,6 @@ jobs:
           image-tags: |
             ${{ needs.prepare.outputs.version }}
             latest
-          labels: |
-            io.hass.name=${{ needs.prepare.outputs.name }}
-            io.hass.description=${{ needs.prepare.outputs.description }}
-            ${{ needs.prepare.outputs.url && format('io.hass.url={0}', needs.prepare.outputs.url) || '' }}
           container-registry-password: ${{ secrets.GITHUB_TOKEN }}
           push: ${{ github.event_name == 'push' }}
           version: ${{ needs.prepare.outputs.version }}
