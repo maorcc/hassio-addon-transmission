@@ -1,4 +1,4 @@
-# Transmission - Home Assistant add-on
+# Transmission - Home Assistant app
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -6,20 +6,20 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-This repository provides a [Transmission](https://transmissionbt.com/) add-on for [Home Assistant](https://www.home-assistant.io/).
+This repository provides a [Transmission](https://transmissionbt.com/) app for [Home Assistant](https://www.home-assistant.io/). (Home Assistant renamed "add-ons" to "apps" in 2026; this is the same thing previously known as the Transmission add-on.)
 
 <img src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
 
 
 Learn more about the Transmission BitTorrent client from the official Transmission website: https://transmissionbt.com/
 
-Read the [detailed documentation](./transmission) of this Home Assitant Transmission add-on.
+Read the [detailed documentation](./transmission) of this Home Assistant Transmission app.
 
-To install, add this repository to your Home Assistant add-ons Store by clicking here:
+To install, add this repository to your Home Assistant App Store by clicking here:
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
-More details on installing and configuring this add-on can be found in the add-on docs, [here](./transmission/).
+More details on installing and configuring this app can be found in the app docs, [here](./transmission/).
 
 If you like it, please ⭐ this github repository. Thank you! <big>🙏</big>
 
@@ -28,7 +28,7 @@ If you like it, please ⭐ this github repository. Thank you! <big>🙏</big>
 <!--
 
 Notes to developers after forking or using the github template feature:
-- While developing comment out the 'image' key from 'example/config.yaml' to make the supervisor build the addon
+- While developing comment out the 'image' key from 'example/config.yaml' to make the supervisor build the app
   - Remember to put this back when pushing up your changes.
 - When you merge to the 'main' branch of your repository a new build will be triggered.
   - Make sure you adjust the 'version' key in 'example/config.yaml' when you do that.

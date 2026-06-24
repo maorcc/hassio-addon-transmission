@@ -1,14 +1,16 @@
-# Home Assistant Add-on: Transmission
+# Home Assistant App: Transmission
+
+> Note: Home Assistant renamed "Add-ons" to "Apps" (Add-on Store → App Store) in 2026. This Transmission app is the same thing previously called the Transmission add-on.
 
 ## Installation
 
-Like other addons:
+Like other apps:
 
-1. Add this repository to your Add-on Store using the link below. (Or manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant add-ons repositories list.)
+1. Add this repository to your App Store using the link below. (Or manually add the repository `https://github.com/maorcc/hassio-addon-transmission` to your Home Assistant apps repositories list.)
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
-2. Find the "Transmission" add-on in the Home Assistant Add-on Store. Click on it, and click on the "INSTALL" button.
+2. Find the "Transmission" app in the Home Assistant App Store. Click on it, and click on the "INSTALL" button.
 
 3. Turn on the **Show in sidebar** and **Start on boot** options.
 
@@ -23,13 +25,13 @@ Two ways to change Transmission settings:
 
 1. Most Transmission settings can be modified via the Transmission web UI. (Recommended)
 
-2. Edit the settings.json file manually but only while the add-on is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed in the web UI.) 
+2. Edit the settings.json file manually but only while the app is not running. Because on Transmission shutdown all the settings are automatically saved from memory.  (Security related settings cannot be changed in the web UI.) 
 
 For full documentation on Transmission settings see the [Transmission Docs].
 
 > <big>⚠️ IMPORTANT</big>
 >
-> Changes to the `settings.json` file should only be done when the add-on is stopped.  Otherwise your changes will be discarded.
+> Changes to the `settings.json` file should only be done when the app is stopped.  Otherwise your changes will be discarded.
 
 ### The default settings
 
@@ -48,11 +50,11 @@ The default values in settings.json are similar to the default values that are d
 
 The "Transmission" easy-to-use web UI is available on the Home Assistant sidebar.
 
-If you do not see it on the sidebar, make sure the addon is running and that you have turned on the "Show in sidebar" option on the Add-on page.
+If you do not see it on the sidebar, make sure the app is running and that you have turned on the "Show in sidebar" option on the App page.
 
 You will find the files you downloaded with Transmission in "/share/download" (That is unless you have changed the `download-dir` settings) 
 
-If you like this add-on, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
+If you like this app, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
 
 
 ## Support
@@ -67,7 +69,7 @@ You have several options to get them answered:
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-To check what is the latest version of Transmission that can be supported by this addon, check what is the latest [Alpine version that is supported by Home Assistant Docker-Base](https://github.com/home-assistant/docker-base/pkgs/container/aarch64-base#base-images), then check in [alpinelinux.org](https://pkgs.alpinelinux.org/packages?name=transmission&branch=edge&repo=&arch=x86_64&origin=&flagged=&maintainer=) what version of Transmission is supported by that Alpine.
+To check what is the latest version of Transmission that can be supported by this app, check what is the latest [Alpine version that is supported by Home Assistant Docker-Base](https://github.com/home-assistant/docker-base/pkgs/container/aarch64-base#base-images), then check in [alpinelinux.org](https://pkgs.alpinelinux.org/packages?name=transmission&branch=edge&repo=&arch=x86_64&origin=&flagged=&maintainer=) what version of Transmission is supported by that Alpine.
 
 [discord]: https://discord.gg/9H9uwXXEhJ
 [forum]: https://community.home-assistant.io
