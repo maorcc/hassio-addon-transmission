@@ -6,14 +6,14 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-This repository provides a [Transmission](https://transmissionbt.com/) app for [Home Assistant](https://www.home-assistant.io/).
+This repository provides a [Transmission](https://transmissionbt.com/) app for [Home Assistant](https://www.home-assistant.io/). (Home Assistant renamed "add-ons" to "apps" in 2026; this is the same thing previously known as the Transmission add-on.)
 
 <img src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
 
 
 Learn more about the Transmission BitTorrent client from the official Transmission website: https://transmissionbt.com/
 
-Read the [detailed documentation](./transmission) of this Home Assitant Transmission app.
+Read the [detailed documentation](./transmission) of this Home Assistant Transmission app.
 
 To install, add this repository to your Home Assistant App Store by clicking here:
 

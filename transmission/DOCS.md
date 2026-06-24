@@ -1,5 +1,7 @@
 # Home Assistant App: Transmission
 
+> Note: Home Assistant renamed "Add-ons" to "Apps" (Add-on Store → App Store) in 2026. This Transmission app is the same thing previously called the Transmission add-on.
+
 ## Installation
 
 Like other apps:
