@@ -44,6 +44,17 @@ The default values in settings.json are similar to the default values that are d
 3. `download-dir`="/share/download". This is where Transmission will put the files it downloads.  You can set it to any directory either under "/media" or under "/share".
 
 
+### Saving downloads to a network or external drive
+
+Transmission can save downloads to a network share (such as an SMB drive) or an external drive. The download folder must be under `/media` or `/share`, because those are the only storage locations the app is allowed to write to.
+
+1. **Mount the drive in Home Assistant.** Go to **Settings → System → Storage**, click **Add network storage**, and add your share with the **Media** (or **Share**) usage type. Once mounted, it becomes available to the app as a folder under `/media/<share-name>` (or `/share/<share-name>`).
+
+2. **Set it as the download folder.** Open the Transmission web UI, click the settings/wrench icon, choose **Edit Preferences → Torrents**, and set **"Download to"** to that path, for example `/media/<share-name>/download`. No file editing is required.
+
+New downloads will then go straight to the network or external drive.
+
+
 ## How to Use
 
 The "Transmission" easy-to-use web UI is available on the Home Assistant sidebar.
