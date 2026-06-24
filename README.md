@@ -13,13 +13,13 @@ This repository provides a [Transmission](https://transmissionbt.com/) app for [
 
 Learn more about the Transmission BitTorrent client from the official Transmission website: https://transmissionbt.com/
 
-Read the [detailed documentation](./transmission) of this Home Assistant Transmission app.
+Read the [detailed documentation](https://github.com/maorcc/hassio-addon-transmission/blob/main/transmission/DOCS.md) of this Home Assistant Transmission app.
 
 To install, add this repository to your Home Assistant App Store by clicking here:
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fmaorcc%2Fhassio-addon-transmission)
 
-More details on installing and configuring this app can be found in the app docs, [here](./transmission/).
+More details on installing and configuring this app can be found in the app docs, [here](https://github.com/maorcc/hassio-addon-transmission/blob/main/transmission/DOCS.md).
 
 If you like it, please ⭐ this github repository. Thank you! <big>🙏</big>
 
