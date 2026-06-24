@@ -1,6 +1,6 @@
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
-# Transmission Add-on
+# Transmission App
 
 [Transmission](https://transmissionbt.com/) is a popular, fast, [open-sourced](https://github.com/transmission/transmission) BitTorrent client with an intuitive and easy to use web UI.
 
@@ -15,7 +15,7 @@ For more details on Transmission see: https://transmissionbt.com/
 ![Transmission Screenshot](https://transmissionbt.com/assets/images/homepage/carousel_homepage/screenshot_windows.png)
 
 ## Thank you
-If you like this add-on, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
+If you like this app, please ⭐ it on [github](https://github.com/maorcc/hassio-addon-transmission). Thank you! 🙏
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
