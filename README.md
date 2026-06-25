@@ -2,13 +2,15 @@
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
+
+[![Builder](https://github.com/maorcc/hassio-addon-transmission/actions/workflows/builder.yaml/badge.svg)](https://github.com/maorcc/hassio-addon-transmission/actions/workflows/builder.yaml)
+[![Lint](https://github.com/maorcc/hassio-addon-transmission/actions/workflows/lint.yaml/badge.svg)](https://github.com/maorcc/hassio-addon-transmission/actions/workflows/lint.yaml)
+[![License](https://img.shields.io/github/license/maorcc/hassio-addon-transmission)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/maorcc/hassio-addon-transmission)](https://github.com/maorcc/hassio-addon-transmission/stargazers)
 
 This repository provides a [Transmission](https://transmissionbt.com/) app for [Home Assistant](https://www.home-assistant.io/). (Home Assistant renamed "add-ons" to "apps" in 2026; this is the same thing previously known as the Transmission add-on.)
 
-<img src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
+<img alt="Transmission logo" src="https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png" width="720" height="300">
 
 
 Learn more about the Transmission BitTorrent client from the official Transmission website: https://transmissionbt.com/
@@ -23,7 +25,7 @@ More details on installing and configuring this app can be found in the app docs
 
 If you like it, please ⭐ this github repository. Thank you! <big>🙏</big>
 
-<img src="https://www.home-assistant.io/images/home-assistant-logo-vertical.svg" width="200" height="200">
+<img alt="Home Assistant logo" src="https://www.home-assistant.io/images/home-assistant-logo-vertical.svg" width="200" height="200">
 
 <!--
 
@@ -43,6 +45,3 @@ Notes to developers after forking or using the github template feature:
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
