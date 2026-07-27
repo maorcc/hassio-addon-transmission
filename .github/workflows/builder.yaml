@@ -27,7 +27,7 @@ jobs:
       architectures: ${{ steps.info.outputs.architectures }}
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
 
       - name: Read add-on info from config.yaml
         id: info
@@ -59,7 +59,7 @@ jobs:
       matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
