@@ -19,7 +19,14 @@ Like other apps:
 
 ### The Settings.json file
 
-The Transmission settings are stored in the `settings.json` file that is located in the addon_config directory.
+The Transmission settings are stored in a `settings.json` file that is located in this app's own
+config folder, named after the app slug: `app_configs/92e558db_transmission`. (The `92e558db` prefix
+identifies the repository the app was installed from, so it differs if you added this repository
+under a different URL.) Inside the running app that same folder is simply `/config`.
+
+To reach the file, use the Samba share app (the `app_configs` share) or the File editor app. Apps
+that have not yet moved to Home Assistant's app terminology, such as Terminal & SSH, still show the
+folder under its previous name, `addon_configs/92e558db_transmission`.
 
 Two ways to change Transmission settings:
 
