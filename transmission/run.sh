@@ -4,7 +4,7 @@ readonly config_dir="/config"
 readonly settings_file="$config_dir/settings.json"
 
 if ! bashio::fs.file_exists "$settings_file"; then
-    bashio::log.info 'First run! Initializing Transmission settings.json in the addon_configs folder.'
+    bashio::log.info 'First run! Initializing Transmission settings.json in the app config folder.'
 
     cat > "$settings_file" <<'EOF'
 {

@@ -2,7 +2,7 @@ name: "Transmission"
 homeassistant: "2023.11.3"
 description: "Transmission is a popular, fast, open-sourced BitTorrent client with an easy to use web UI."
 url: "https://github.com/maorcc/hassio-addon-transmission/tree/main/transmission"
-version: "1.3.0"
+version: "1.4.0"
 slug: "transmission"
 init: false
 arch:
@@ -13,7 +13,7 @@ ingress_entry: transmission/web/
 ingress_port: 9091
 panel_icon: "mdi:download-network"
 map:
-  - addon_config:rw
+  - app_config:rw
   - media:rw
   - share:rw
 ports:

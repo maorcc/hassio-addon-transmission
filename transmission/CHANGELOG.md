@@ -5,6 +5,17 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
  
+## [1.4.0] - 2026-07-31
+
+Migrate to the new `app_config` folder mapping name introduced in Home Assistant Supervisor.
+
+The legacy `addon_config` name still works but is deprecated as of Supervisor 2026.07 and logs a
+warning on every store reload. Both names mount the same folder at `/config` inside the app, so
+this is a rename only. No settings move and no action is needed when upgrading.
+
+### changes
+1. Minimum version of Home Assistant Supervisor for this app is "2026.07.1".
+
 ## [1.3.0] - 2026-06-24
 
 Bump Alpine base from 3.23 to 3.24 and Transmission from 4.0.6 to 4.1.2.

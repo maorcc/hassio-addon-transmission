@@ -19,7 +19,7 @@ Like other apps:
 
 ### The Settings.json file
 
-The Transmission settings are stored in the `settings.json` file that is located in the addon_config directory.
+The Transmission settings are stored in the `settings.json` file that is located in the app config directory.
 
 Two ways to change Transmission settings:
 
